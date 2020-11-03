@@ -23,6 +23,7 @@ body {
   background-color: var(--bg, #0392BF);
   color: var(--bg-text, white);
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -50,7 +51,7 @@ nav ul li {
 nav ul li a {
   padding-left: 1.875em;
   text-decoration: none;
-  font-size: 0.75em;
+  font-size: 0.85em;
   display: block;
   color: var(--bg-text);
 }
