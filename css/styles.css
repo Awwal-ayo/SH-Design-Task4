@@ -26,6 +26,16 @@ body {
   overflow: hidden;
 }
 
+/* Main body */
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "header"
+                       "section";
+  grid-template-rows: 100px 1fr;
+}
+
+/* Header styling */
 header {
   display: flex;
   align-content: space-between;
@@ -55,6 +65,24 @@ nav ul li a {
   display: block;
   color: var(--bg-text);
 }
+
+nav ul li a:hover {
+  cursor: pointer;
+}
+
+/* Banner styling */
+.banner {
+  grid-area: section;
+  display: grid;
+  grid-template-areas: "img content";
+  grid-template-columns: 2fr 2.5fr;
+}
+
+.img {
+  grid-area: img;
+  align-self: center;
+  width: 50vh;
+} 
 
 img {
   margin-top: -6.25em;
@@ -113,37 +141,6 @@ h1 pre {
   line-height: 0.9em;
 }
 
-.main {
-  grid-area: main;
-  display: grid;
-  grid-template-areas: "header"
-                       "section";
-  grid-template-rows: 100px 1fr;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--pry-color3);
-}
-
-.sidebar span {
-  margin-top: 1.375em;
-  padding: 0.5em;
-  background-color: var(--pry-color1);
-  border-radius: 50%;
-}
-
-.banner {
-  grid-area: section;
-  display: grid;
-  grid-template-areas: "img content";
-  grid-template-columns: 2fr 2.5fr;
-}
-
 .content {
   grid-area: content;
   margin: 3em 3.75em 0;
@@ -181,23 +178,6 @@ h1 pre {
   width: 0.5em;
   padding-left: 0.6em;
   color: #FBEC06;
-}
-
-.img {
-  grid-area: img;
-  align-self: center;
-  width: 50vh;
-} 
-
-.sm-icons {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1em;
-}
-
-.sm-icons i {
-  padding-bottom: 1.25em;
-  color: #0392BF;
 }
 
 .colour-change {
@@ -258,6 +238,38 @@ h1 pre {
 #proceed:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 16, 27, 0.51);
 }
+
+/* sidebar styling */
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--pry-color3);
+}
+
+.sidebar span {
+  margin-top: 1.375em;
+  padding: 0.5em;
+  background-color: var(--pry-color1);
+  border-radius: 50%;
+}
+
+.sm-icons {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.sm-icons i {
+  padding-bottom: 1.25em;
+  color: #0392BF;
+}
+
+
+/* Media queries */
 
 @media only screen and (max-width: 1000px) {
   body {
