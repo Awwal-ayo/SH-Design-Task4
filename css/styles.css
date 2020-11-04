@@ -20,8 +20,8 @@ body {
   display: grid;
   grid-template-areas: "sidebar main";
   grid-template-columns: 70px 1fr;
-  background-color: var(--bg, #0392BF);
-  color: var(--bg-text, white);
+  background-color: var(--bg);
+  color: var(--bg-text);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -69,22 +69,13 @@ nav ul li a {
   /* background-color: red; */
 }
 
-nav ul li a:link {
-  text-transform: capitalize;
-}
-
 nav ul li a:visited {
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 nav ul li a:hover {
   cursor: pointer;
   font-size: 1em;
-}
-
-nav ul li a:active {
-  color: var(-);
 }
 
 /* Banner styling */
@@ -103,11 +94,9 @@ nav ul li a:active {
 } 
 
 img {
-  /* z-index: 1; */
   margin-top: -6.25em;
   width: 70vh;
   padding: 0 3.125em 0 ;
-  /* overflow: hidden; */
   height: 90vh;
 }
 
@@ -131,11 +120,9 @@ p {
 }
 
 select {
-  /* border:0; */
   background:transparent;
   border:1px solid var(--bg-text);
   width:150px;
-  /* -webkit-appearance: none; */
   padding: 0.5em 0.2em;
   margin-left: 1.95em;
 }
@@ -332,6 +319,10 @@ h1 pre {
     display: block;
   }
 
+  nav ul li a:hover {
+    font-size: 0.75em;
+  }
+
   img {
     margin: 5em 0 0 0;
     padding: 0;
@@ -427,7 +418,6 @@ h1 pre {
     height: 0.3em;
     padding-right: 0.3em;
     color: #FBEC06;
-    /* display: block; */
   }
 
   .content .con {
