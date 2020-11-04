@@ -23,6 +23,10 @@ body {
   background-color: var(--bg, #0392BF);
   color: var(--bg-text, white);
   font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
+=======
+  /*overflow: hidden;*/
+>>>>>>> 1a902886b52c966042faa228c5b21015341edd3a
 }
 
 /* Main body */
@@ -439,6 +443,7 @@ h1 pre {
     margin-bottom: 2em;
   }
 
+<<<<<<< HEAD
   @media only screen and (min-width: 1001px) {
     body {
       overflow: hidden;
@@ -446,3 +451,6 @@ h1 pre {
   }
 
 }
+=======
+}
+>>>>>>> 1a902886b52c966042faa228c5b21015341edd3a
