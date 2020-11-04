@@ -47,6 +47,7 @@ header i {
   margin: 2em 4.375em 0 0;
 }
 nav {
+  z-index: 3;
   margin: 1em 0 0 1.25em;
 }
 
@@ -59,15 +60,32 @@ nav ul li {
 }
 
 nav ul li a {
-  padding-left: 1.875em;
+  z-index: 2;
+  margin-top: -2em;
+  padding: 2em ;
   text-decoration: none;
   font-size: 0.85em;
   display: block;
   color: var(--bg-text);
+  /* background-color: red; */
+}
+
+nav ul li a:link {
+  text-transform: capitalize;
+}
+
+nav ul li a:visited {
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 nav ul li a:hover {
   cursor: pointer;
+  font-size: 1em;
+}
+
+nav ul li a:active {
+  color: var(-);
 }
 
 /* Banner styling */
@@ -82,9 +100,11 @@ nav ul li a:hover {
   grid-area: img;
   align-self: center;
   width: 50vh;
+  z-index: 0;
 } 
 
 img {
+  /* z-index: 1; */
   margin-top: -6.25em;
   width: 70vh;
   padding: 0 3.125em 0 ;
@@ -255,6 +275,10 @@ h1 pre {
   padding: 0.5em;
   background-color: var(--pry-color1);
   border-radius: 50%;
+}
+
+.sidebar span a {
+  text-decoration: none;
 }
 
 .sm-icons {
