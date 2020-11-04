@@ -23,7 +23,6 @@ body {
   background-color: var(--bg, #0392BF);
   color: var(--bg-text, white);
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
 }
 
 /* Main body */
@@ -438,6 +437,12 @@ h1 pre {
   #proceed {
     width: 100%;
     margin-bottom: 2em;
+  }
+
+  @media only screen and (min-width: 1001px) {
+    body {
+      overflow: hidden;
+    }
   }
 
 }
