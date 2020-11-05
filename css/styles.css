@@ -23,6 +23,7 @@ body {
   background-color: var(--bg);
   color: var(--bg-text);
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 /* Main body */
@@ -149,7 +150,7 @@ h1 pre {
 
 .content {
   grid-area: content;
-  margin: 3em 3.75em 0;
+  margin: 1em 3.75em 0;
 }
 
 .content .con {
@@ -231,7 +232,7 @@ h1 pre {
 }
 
 .filter-tile {
-  margin-bottom: 3.5em;
+  margin-bottom: 2.5em;
 }
 
 #proceed {
@@ -287,6 +288,7 @@ h1 pre {
     grid-template-areas: "sidebar"
                          "main";
     grid-template-rows: 50px 1fr;
+    overflow: visible;
     /* height: 100vh; */
   }
 
